@@ -9,7 +9,7 @@
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -87,8 +87,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -259,9 +259,9 @@
 <vertex x="5.715" y="3.302"/>
 <vertex x="5.715" y="0.508"/>
 </polygon>
-<text x="22.225" y="16.51" size="1.016" layer="22" ratio="15" rot="SMR270">v20-915
-Erle Robotics
-2014-09-16</text>
+<text x="22.225" y="16.51" size="1.016" layer="22" ratio="15" rot="SMR270">3DR Radio V2.0
+3DRobotics.com
+2013-07-16</text>
 <text x="42.545" y="17.145" size="0.8128" layer="21" ratio="15" rot="SR90">RX</text>
 <text x="42.545" y="3.175" size="0.8128" layer="21" ratio="15" rot="SR90">TX</text>
 <hole x="2.54" y="10.795" drill="2.286"/>
@@ -981,162 +981,54 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </pass>
 </autorouter>
 <elements>
-<element name="U2" library="3DRobotics" package="HM-TRP-SMD" value="" x="17.78" y="10.795" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="17.78" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="17.78" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="17.78" y="10.795" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="J$1" library="3DRobotics" package="SMA-EDGE" value="SMA_EDGE" x="2.286" y="4.8006" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="2.286" y="4.8006" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="2.286" y="4.8006" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="2.286" y="4.8006" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="JP1" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="40.64" y="1.905">
-<attribute name="OC_FARNELL" value="unknown" x="40.64" y="1.905" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="40.64" y="1.905" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="40.64" y="1.905" size="1.778" layer="27" display="off"/>
-</element>
-<element name="JP2" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2.54" y="19.685">
-<attribute name="OC_FARNELL" value="unknown" x="2.54" y="19.685" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="2.54" y="19.685" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="2.54" y="19.685" size="1.778" layer="27" display="off"/>
-</element>
+<element name="U2" library="3DRobotics" package="HM-TRP-SMD" value="" x="17.78" y="10.795" rot="R90"/>
+<element name="J$1" library="3DRobotics" package="SMA-EDGE" value="SMA_EDGE" x="2.286" y="4.8006" rot="R90"/>
+<element name="JP1" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="40.64" y="1.905"/>
+<element name="JP2" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2.54" y="19.685"/>
 <element name="U$5" library="3DRobotics" package="MLF-6-1.6MM" value="MIC5353-3.3" x="35.941" y="3.175" rot="R90">
 <attribute name="MFGPN" value="MIC5353" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://www.micrel.com/_PDF/mic5353.pdf" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="LINK" value="http://www.micrel.com/index.php/en/products/power-management-ics/ldos/single-ldos/article/79-mic5353-.html" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="2293425" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="MICREL SEMICONDUCTOR" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MIC5353-3.3YMT TR" x="35.941" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C6" library="pel_dipol_comp" package="0402-CAP" value="1uF" x="38.1" y="3.175" rot="R90">
-<attribute name="OC_FARNELL" value="2332548" x="38.1" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="AVX" x="38.1" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="0402ZD105MAT2A" x="38.1" y="3.175" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="C7" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="35.941" y="1.524">
-<attribute name="OC_FARNELL" value="1833861" x="35.941" y="1.524" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="AVX" x="35.941" y="1.524" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0402YC104KAT2A" x="35.941" y="1.524" size="1.778" layer="27" display="off"/>
-</element>
-<element name="C8" library="pel_dipol_comp" package="0402-CAP" value="1uF" x="34.29" y="3.175" rot="R270">
-<attribute name="OC_FARNELL" value="2332548" x="34.29" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="AVX" x="34.29" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="0402ZD105MAT2A" x="34.29" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
+<element name="C6" library="pel_dipol_comp" package="0402-CAP" value="1uF" x="38.1" y="3.175" rot="R90"/>
+<element name="C7" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="35.941" y="1.524"/>
+<element name="C8" library="pel_dipol_comp" package="0402-CAP" value="1uF" x="34.29" y="3.175" rot="R270"/>
 <element name="U$1" library="3DRobotics" package="QFN20" value="FT231X" x="34.29" y="17.78" rot="R90">
 <attribute name="MFGPN" value="FT231X" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="LINK" value="http://www.ftdichip.com/Products/ICs/FT231X.html" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="2081330" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="FTDI" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="FT231XQ" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C1" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="38.1" y="19.431">
-<attribute name="OC_FARNELL" value="1833861" x="38.1" y="19.431" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="AVX" x="38.1" y="19.431" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0402YC104KAT2A" x="38.1" y="19.431" size="1.778" layer="27" display="off"/>
-</element>
-<element name="USB1" library="pixhawk2" package="MOLEX-47346-0001" value="MOLEX-47346-0001" x="44.196" y="10.795" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="44.196" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="44.196" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="44.196" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="C9" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="38.1" y="20.574">
-<attribute name="OC_FARNELL" value="1833861" x="38.1" y="20.574" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="AVX" x="38.1" y="20.574" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="0402YC104KAT2A" x="38.1" y="20.574" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R1" library="pel_dipol_comp" package="0402-RES" value="270R" x="41.275" y="16.51">
-<attribute name="OC_FARNELL" value="1563587" x="41.275" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="VISHAY DALE" x="41.275" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW0402270RFKED" x="41.275" y="16.51" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R2" library="pel_dipol_comp" package="0402-RES" value="270R" x="41.275" y="5.08">
-<attribute name="OC_FARNELL" value="1563587" x="41.275" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="VISHAY DALE" x="41.275" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW0402270RFKED" x="41.275" y="5.08" size="1.778" layer="27" display="off"/>
-</element>
-<element name="LED1" library="pel_dipol_comp" package="0603-LED" value="LED-0603" x="43.815" y="16.51">
-<attribute name="OC_FARNELL" value="unknown" x="43.815" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="43.815" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="43.815" y="16.51" size="1.778" layer="27" display="off"/>
-</element>
-<element name="LED2" library="pel_dipol_comp" package="0603-LED" value="LED-0603" x="43.815" y="5.08">
-<attribute name="OC_FARNELL" value="unknown" x="43.815" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="43.815" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="43.815" y="5.08" size="1.778" layer="27" display="off"/>
-</element>
-<element name="U$2" library="pixhawk2" package="DF13A-6P-1.25H" value="DF13-6P-1.25H" x="43.053" y="10.795" rot="MR90">
-<attribute name="OC_FARNELL" value="1324928" x="43.053" y="10.795" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MF" value="HIROSE(HRS)" x="43.053" y="10.795" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="DF13-6P-1.25H(20)" x="43.053" y="10.795" size="1.778" layer="28" rot="MR90" display="off"/>
-</element>
+<element name="C1" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="38.1" y="19.431"/>
+<element name="USB1" library="pixhawk2" package="MOLEX-47346-0001" value="MOLEX-47346-0001" x="44.196" y="10.795" rot="R180"/>
+<element name="C9" library="pel_dipol_comp" package="0402-CAP" value="0.1uF" x="38.1" y="20.574"/>
+<element name="R1" library="pel_dipol_comp" package="0402-RES" value="270R" x="41.275" y="16.51"/>
+<element name="R2" library="pel_dipol_comp" package="0402-RES" value="270R" x="41.275" y="5.08"/>
+<element name="LED1" library="pel_dipol_comp" package="0603-LED" value="LED-0603" x="43.815" y="16.51"/>
+<element name="LED2" library="pel_dipol_comp" package="0603-LED" value="LED-0603" x="43.815" y="5.08"/>
+<element name="U$2" library="pixhawk2" package="DF13A-6P-1.25H" value="DF13-6P-1.25H" x="43.053" y="10.795" rot="MR90"/>
 <element name="U$4" library="3DRobotics" package="3DR-EMI-SHIELD-25X20" value="" x="17.78" y="10.795"/>
-<element name="R5" library="pel_dipol_comp" package="0402-RES" value="33R" x="33.02" y="10.16">
-<attribute name="OC_FARNELL" value="1652785" x="33.02" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="VISHAY DRALORIC" x="33.02" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW040233R0FKED" x="33.02" y="10.16" size="1.778" layer="27" display="off"/>
-</element>
+<element name="R5" library="pel_dipol_comp" package="0402-RES" value="33R" x="33.02" y="10.16"/>
 <element name="D3" library="zetex" package="SOT323" value="BAT54CWFILM" x="39.37" y="7.62" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="BAT54CWFILM" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="STMICROELECTRONICS" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="2341637" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="39.37" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="pel_dipol_comp" package="0402-RES" value="10k" x="33.02" y="4.953">
-<attribute name="OC_FARNELL" value="1469669" x="33.02" y="4.953" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="VISHAY DRALORIC" x="33.02" y="4.953" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW040210K0FKED" x="33.02" y="4.953" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R7" library="pel_dipol_comp" package="0402-RES" value="10k" x="33.02" y="6.096">
-<attribute name="OC_FARNELL" value="1469669" x="33.02" y="6.096" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="VISHAY DRALORIC" x="33.02" y="6.096" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRCW040210K0FKED" x="33.02" y="6.096" size="1.778" layer="27" display="off"/>
-</element>
+<element name="R6" library="pel_dipol_comp" package="0402-RES" value="10k" x="33.02" y="4.953"/>
+<element name="R7" library="pel_dipol_comp" package="0402-RES" value="10k" x="33.02" y="6.096"/>
 <element name="U$10" library="3DRobotics" package="VFSOP-8" value="74LVC2G08" x="34.29" y="13.335" rot="R270">
 <attribute name="MFGPN" value="74LVC2G08" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="http://www.nxp.com/documents/data_sheet/74LVC2G08.pdf" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="LINK" value="http://www.nxp.com/products/logic/gates/and_gates/74LVC2G08DC.html" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="2164904" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="NXP" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="74LVC2G08GM" x="34.29" y="13.335" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$12" library="pixhawk2" package="SOT563-6" value="NUF2042XV6" x="39.37" y="10.795" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="39.37" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="39.37" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="39.37" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="L2" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="39.37" y="3.175" rot="R270">
-<attribute name="OC_FARNELL" value="unknown" x="39.37" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="39.37" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="39.37" y="3.175" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="L3" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="32.512" y="3.683" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="32.512" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="32.512" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="32.512" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="L6" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="8.89" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="33.02" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="33.02" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="33.02" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="L7" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="11.43" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="33.02" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="33.02" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="33.02" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="L1" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="7.366" rot="R180">
-<attribute name="OC_FARNELL" value="unknown" x="33.02" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="33.02" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="33.02" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
+<element name="U$12" library="pixhawk2" package="SOT563-6" value="NUF2042XV6" x="39.37" y="10.795" rot="R180"/>
+<element name="L2" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="39.37" y="3.175" rot="R270"/>
+<element name="L3" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="32.512" y="3.683" rot="R180"/>
+<element name="L6" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="8.89" rot="R180"/>
+<element name="L7" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="11.43" rot="R180"/>
+<element name="L1" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="33.02" y="7.366" rot="R180"/>
 <element name="TP1" library="testpad" package="TP12R" value="TPSTP12R" x="34.925" y="10.16">
 <attribute name="TP_SIGNAL_NAME" value="" x="34.925" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="34.925" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="34.925" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="34.925" y="10.16" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
